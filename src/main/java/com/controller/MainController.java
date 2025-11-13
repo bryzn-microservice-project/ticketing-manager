@@ -27,6 +27,7 @@ public class MainController {
      */
     @PostMapping("/api/v1/ticket")
     public ResponseEntity<String> ticketRequest() {
+        System.out.println("\n");
         LOG.info("RECEIVED A REQUEST FOR A TICKET ID");
         return ResponseEntity.ok(generateTicket());
     }
